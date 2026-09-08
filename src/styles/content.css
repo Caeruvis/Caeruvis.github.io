@@ -1,0 +1,161 @@
+.content-page {
+    width: min(100% - 44px, 980px);
+    margin: 0 auto;
+    padding: clamp(64px, 10vw, 112px) 0 96px;
+}
+
+.page-intro {
+    max-width: 760px;
+    margin-bottom: 64px;
+}
+
+.page-kicker {
+    margin: 0 0 12px;
+    color: #3757c8;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 650;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.page-intro h1 {
+    margin: 0;
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1.02;
+    letter-spacing: -0.052em;
+}
+
+.page-summary {
+    max-width: 680px;
+    margin: 24px 0 0;
+    color: #6e6e73;
+    font-size: clamp(17px, 2vw, 21px);
+    line-height: 1.55;
+}
+
+.content-section {
+    padding: 48px 0;
+    border-top: 1px solid #d2d2d7;
+}
+
+.content-section:first-of-type {
+    border-top: 0;
+}
+
+.section-heading {
+    margin: 0 0 24px;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.card {
+    min-height: 210px;
+    padding: 28px;
+    color: inherit;
+    background: #f5f5f7;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: transform 180ms ease, background 180ms ease;
+}
+
+.card:hover,
+.card:focus-visible {
+    background: #eeeef2;
+    transform: translateY(-2px);
+}
+
+.card-meta {
+    margin: 0 0 24px;
+    color: #6e6e73;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.card h2,
+.card h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.025em;
+}
+
+.card p:last-child {
+    margin: 12px 0 0;
+    color: #515154;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tag-list a,
+.tag {
+    display: inline-flex;
+    padding: 9px 14px;
+    color: #1d1d1f;
+    background: #f5f5f7;
+    border-radius: 999px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.prose {
+    max-width: 720px;
+    color: #424245;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.prose a {
+    color: #06c;
+}
+
+.empty-note {
+    padding: 32px;
+    color: #6e6e73;
+    background: #f5f5f7;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 680px) {
+    .content-page {
+        width: min(100% - 40px, 980px);
+        padding-top: 56px;
+    }
+
+    .page-intro {
+        margin-bottom: 42px;
+    }
+
+    .content-section {
+        padding: 38px 0;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: 0;
+        padding: 24px;
+        border-radius: 20px;
+    }
+}
